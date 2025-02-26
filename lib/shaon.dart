@@ -8,7 +8,7 @@ class shaon extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Shaon Page'),
+        title: const Text('Didarul Islam'),
         centerTitle: true,
       ),
       body: Center(
