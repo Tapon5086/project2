@@ -21,7 +21,12 @@ class MainApp extends StatelessWidget {
             style: ElevatedButton.styleFrom(
               backgroundColor: Colors.red,
             ),
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => shaon()),
+              );
+            },
             child: const Text('Next'),
           ),
         ),
