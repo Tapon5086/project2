@@ -1,28 +1,28 @@
 import 'package:flutter/material.dart';
+import 'main.dart';
 
-void main() {
-  runApp(const MainApp());
-}
-
-class MainApp extends StatelessWidget {
-  const MainApp({super.key});
+class shaon extends StatelessWidget {
+  const shaon({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Didarul Islam Shaon'),
-          centerTitle: true,
-        ),
-        body: Center(
-          child: ElevatedButton(
-            style: ElevatedButton.styleFrom(
-              backgroundColor: Colors.red,
-            ),
-            onPressed: () {},
-            child: const Text('Next'),
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Shaon Page'),
+        centerTitle: true,
+      ),
+      body: Center(
+        child: ElevatedButton(
+          style: ElevatedButton.styleFrom(
+            backgroundColor: Colors.blue,
           ),
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => const MainApp()),
+            );
+          },
+          child: const Text('Back to Tapon Paul'),
         ),
       ),
     );
